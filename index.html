@@ -11,9 +11,19 @@
       .container {
         width: 450px;
         height: 150px;
-        background-size: cover;
-        background: url("https://raw.githubusercontent.com/veljko85/email-signiture/gh-branches/bck2.jpg");
-        border: 1px solid black;
+        /* background-size: cover;
+        background: url("bck2.svg"); */
+        /* border: 1px solid black; */
+      }
+      /* .background-container {
+        width: 450px;
+        height: 150px;
+      } */
+      .background {
+          width: 450px;
+          height: 150px;
+          position: absolute;
+          z-index: -1;
       }
       .photo-container {
         width: 90px;
@@ -108,7 +118,11 @@
     </style>
   </head>
   <body>
+    <!-- <div class="background-container"> -->
+      <img class='background' src='bg.svg'>
+    <!-- </div> -->
     <div class="container">
+    
       <div class="photo-container">
         <img class="photo" src="yana-photo.png" />
       </div>
